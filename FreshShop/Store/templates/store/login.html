@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>用户登录</title>
+  <title>SB Admin 2 - Register</title>
 
   <!-- Custom fonts for this template-->
   <link href="/static/store/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -35,31 +35,31 @@
                 <h1 class="h4 text-gray-900 mb-4">用户登录</h1>
               </div>
               <form class="user" method="post">
-                  {% csrf_token %}
-{#                <div class="form-group row">#}
-{#                  <div class="col-sm-6 mb-3 mb-sm-0">#}
-{#                    <input type="text" class="form-control form-control-user" name="username" placeholder="用户名">#}
-{#                  </div>#}
-{#                  <div class="col-sm-6">#}
-{#                    <input type="password" class="form-control form-control-user"  placeholder="Last Name">#}
-{#                  </div>#}
-{#                </div>#}
+                {% csrf_token %}
                 <div class="form-group">
                   <input type="text" class="form-control form-control-user" name="username" placeholder="用户名">
                 </div>
-                  <div class="form-group">
+                <div class="form-group">
                   <input type="password" class="form-control form-control-user" name="password" placeholder="密码">
                 </div>
                 <div class="form-group">
-                  <input type="submit" class="btn btn-google btn-user btn-block" value="登录">
+                  <input type="submit" class="btn btn-primary btn-user btn-block" value="登陆">
                 </div>
+
+                <hr>
+{#                <a href="index.html" class="btn btn-google btn-user btn-block">#}
+{#                  <i class="fab fa-google fa-fw"></i> Register with Google#}
+{#                </a>#}
+{#                <a href="index.html" class="btn btn-facebook btn-user btn-block">#}
+{#                  <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook#}
+{#                </a>#}
               </form>
               <hr>
               <div class="text-center">
                 <a class="small" href="forgot-password.html">忘记密码</a>
               </div>
               <div class="text-center">
-                <a class="small" href="/Store/register/">没有账号，去注册</a>
+                <a class="small" href="/Store/register/">没有账号了，去注册</a>
               </div>
             </div>
           </div>
